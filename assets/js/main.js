@@ -8,7 +8,7 @@
 function e(dest){
 	$(document).ready(function () {
 		$("html").animate({
-			scrollTop: $(dest).offset().top - (innerHeight/4),
+			scrollTop: dest.offset().top - (innerHeight/4),
 			preventScroll: true,
 			passive: true
 		},
