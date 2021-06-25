@@ -6,9 +6,10 @@
 
 
 function e(dest){
-	$(document).ready(function () {
+	
+	 $(document).ready(function () {
 		$("html").animate({
-			scrollTop: dest.offset().top - (innerHeight/4),
+			scrollTop: dest.offset().top - (window.innerHeight/4),
 			preventScroll: true,
 			passive: true
 		},
@@ -54,10 +55,9 @@ function e(dest){
 			narrower:  [ '737px',   '840px'  ],
 			mobile:    [ null,      '736px'  ]
 		});
-	$('#enter').hide();
+
 	// Play initial animations on page load.
 		$window.on('load', function() {
-
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
 
